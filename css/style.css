@@ -804,7 +804,7 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border-radius: 0 0 3px 3px;
-  background-image: url(../../img/shape-promo.svg);
+  background-image: url(../img/shape-promo.svg);
   background-repeat: no-repeat;
   background-size: 100% 84px;
 }
@@ -855,7 +855,7 @@ button {
   background-size: 223px 90px;
 }
 .promo__label--blue {
-  background-image: url(../../img/menu-blue.svg);
+  background-image: url(../img/menu-blue.svg);
 }
 .promo__label--green {
   background-image: url(../img/menu-green.svg);
