@@ -1,0 +1,72 @@
+.promo {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.promo__slogan {
+  min-height: 84px;
+  color: #fff;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 0 0 3px 3px;
+  background-image: url(../../img/shape-promo.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 84px;
+  
+  p {
+    margin: 0;
+    background-color: @green;
+  }
+}
+
+.promo__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+  }
+}
+
+.promo__aside {
+  position: absolute;
+  z-index: -1;
+  top: 52px;
+  right: -135px;
+}
+
+.promo__label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6px;
+  color: #fff;
+  text-decoration: underline;
+  width: 223px;
+  min-height: 90px;
+  padding-left: 70px;
+  padding-right: 45px;
+  background-repeat: no-repeat;
+  background-size: 223px 90px;
+  
+  &--blue {
+    background-image: url(../../img/menu-blue.svg); 
+  }
+  
+  &--green {
+    background-image: url(../img/menu-green.svg); 
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
