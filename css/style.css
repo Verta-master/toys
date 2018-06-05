@@ -1083,3 +1083,190 @@ button {
 .category__link:active {
   text-decoration: underline;
 }
+.benefits {
+  margin-bottom: 30px;
+}
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+.benefits__item {
+  position: relative;
+  height: 225px;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+.benefits__item img {
+  display: block;
+  height: 100%;
+  max-width: none;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.benefits__item p {
+  height: 63px;
+  margin: 0;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  bottom: 18px;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.benefits__item p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 22px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: inherit;
+}
+.benefits__item p span {
+  display: block;
+  font-size: 11px;
+}
+.benefits__item p .benefits__tag {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 85px;
+  height: 86px;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: none;
+  font-style: normal;
+  text-align: center;
+  background-image: url(../img/sticker.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.benefits__item p .benefits__tag b {
+  display: block;
+  font-size: 40px;
+}
+.benefits__item--shipping {
+  width: 400px;
+}
+.benefits__item--shipping p {
+  left: 0;
+  background-color: #ff207e;
+  border-radius: 0 5px 5px 0;
+}
+.benefits__item--warranty {
+  width: 348px;
+}
+.benefits__item--warranty p {
+  right: 0;
+  background-color: #2ecc71;
+  border-radius: 5px 0 0 5px;
+}
+.benefits__item--warranty p::after {
+  right: auto;
+  left: -20px;
+}
+.benefits__item--design {
+  width: 400px;
+}
+.benefits__item--design p {
+  right: 0;
+  background-color: #ff207e;
+  border-radius: 5px 0 0 5px;
+}
+.benefits__item--design p::after {
+  right: auto;
+  left: -20px;
+}
+.benefits__item--social {
+  width: 196px;
+}
+.benefits__item--social p {
+  left: 0;
+  background-color: #2ecc71;
+  border-radius: 0 5px 5px 0;
+}
+.benefits__item--packing {
+  width: 378px;
+}
+.benefits__item--packing p {
+  left: 0;
+  background-color: #0075c7;
+  border-radius: 0 5px 5px 0;
+}
+.benefits__item--delivery {
+  width: 573px;
+}
+.benefits__item--delivery p {
+  left: 0;
+  padding-right: 60px;
+  background-color: #ffbe00;
+  border-radius: 0 5px 5px 0;
+}
+.benefits__item--delivery p::after {
+  display: none;
+}
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social--benefits {
+  position: absolute;
+  z-index: 5;
+  top: 65px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+}
+.social__item {
+  margin-left: 3px;
+  margin-right: 4px;
+  margin-bottom: 7px;
+}
+.social__item:hover img,
+.social__item:active img {
+  opacity: 0.8;
+}
