@@ -1,0 +1,36 @@
+.feedback {
+  position: relative;
+  width: 370px;
+  height: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: @yellow;
+  transition: ease-out 0.2s;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: inherit;
+    transition: ease-out 0.2s;
+  }
+  
+  &:hover,
+  &:active {
+    background-color: #ffcc00;
+    transition: ease-out 0.2s;
+  }
+}
