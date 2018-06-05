@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  &--benefits {
+    position: absolute;
+    z-index: 5;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+.social__item {
+  margin-left: 3px;
+  margin-right: 4px;
+  margin-bottom: 7px;
+  
+  &:hover,
+  &:active {
+    img {
+      opacity: 0.8;
+    }
+  }
+}
