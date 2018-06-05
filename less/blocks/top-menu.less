@@ -1,5 +1,14 @@
 .top-menu {
+  position: relative;
   background-color: #f7f7f7;
+}
+
+.top-menu__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 165px;
 }
 
 .top-menu__btn {
@@ -11,7 +20,6 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 165px;
   
   li {
     margin-left: 25px;
@@ -38,6 +46,7 @@
 .top-menu__region {
   position: relative;
   z-index: 5;
+  margin-left: 25px;
   padding-left: 15px;
   padding-right: 13px;
   color: #fff;
@@ -71,7 +80,7 @@
   top: 100%;
   left: 0;
   width: 100%;
-  padding-top: 10px;
+  padding: 10px 20px;
   background-color: @green;
   border-radius: 2px;
   

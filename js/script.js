@@ -10,6 +10,12 @@ $('.top-menu__choice').click(function(e) {
   $('.top-menu__city').slideToggle();
 })
 
+$('.top-menu__btn').click(function(e) {
+  e.stopPropagation();
+  $('.top-menu').toggleClass('top-menu--opened');
+  $('.top-menu__list').slideToggle();
+})
+
 //Hide popups on escape and click outside
 $("body").click(function(){
   $('.top-menu__city').slideUp();
