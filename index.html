@@ -11,13 +11,15 @@
 <body>
   <header class="header">
     <nav class="top-menu">
-      <button class="top-menu__btn"><span class="visually-hidden">Top menu</span></button>
-      <ul class="wrapper top-menu__list">
-        <li><a href="#" class="top-menu__link"><i class="fas fa-truck"></i>Доставка</a></li>
-        <li><a href="#" class="top-menu__link"><i class="fas fa-star"></i>Хиты продаж!</a></li>
-        <li><a href="#" class="top-menu__link"><i class="fas fa-users"></i>Корпоративным клиентам</a></li>
-        <li><a href="#" class="top-menu__link"><i class="fas fa-user"></i>Личный кабинет</a></li>
-        <li class="top-menu__region">
+      <div class="wrapper top-menu__wrap">
+        <button class="top-menu__btn"><span class="visually-hidden">Top menu</span></button>
+        <ul class="top-menu__list">
+          <li><a href="#" class="top-menu__link"><i class="fas fa-truck"></i>Доставка</a></li>
+          <li><a href="#" class="top-menu__link"><i class="fas fa-star"></i>Хиты продаж!</a></li>
+          <li><a href="#" class="top-menu__link"><i class="fas fa-users"></i>Корпоративным клиентам</a></li>
+          <li><a href="#" class="top-menu__link"><i class="fas fa-user"></i>Личный кабинет</a></li>
+        </ul>
+        <div class="top-menu__region">
           <i class="fas fa-map-marker-alt"></i>
           <span>ваш регион:</span>
           <button class="top-menu__choice">Москва<i class="fas fa-caret-down"></i></button>
@@ -26,8 +28,8 @@
             <li><a href="#">Санкт-Петербург</a></li>
             <li><a href="#">Екатеринбург</a></li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
     <div class="header__middle wrapper">
       <div class="header__wrap">
