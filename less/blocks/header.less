@@ -1,10 +1,9 @@
 .header__wrap {
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 70px;
+  padding-right: 85px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .header__list {
@@ -12,8 +11,8 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 45px;
-  padding-right: 145px;
-  margin-bottom: 15px;
+  padding-right: 155px;
+  margin-bottom: 12px;
 }
 
 .header__item {
@@ -31,18 +30,21 @@
     font-size: 12px;
     line-height: 14px;
     color: #969696;
+    max-width: 100%;
   }
 }
 
 .header__basket {
+  margin-top: 10px;
   font-family: "Lato", "Arial", sans-serif;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   
   p {
-    margin: 0;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
     font-size: 17px;
     line-height: 22px;
     font-weight: 700;
@@ -57,6 +59,9 @@
 }
 
 .header__contacts {
+  margin-top: 17px;
+  margin-left: 100px;
+  margin-right: 50px;
   color: #12ade3;
   
   p {
@@ -65,13 +70,16 @@
   
   .header__phone {
     display: block;
-    margin-left: -35px;
-    font-size: 27px;
+    margin-left: -25px;
+    margin-top: 5px;
+    font-size: 25px;
+    line-height: 1;
     font-weight: 700;
+    letter-spacing: -0.05em;
     
     i {
-      font-size: 24px;
-      margin-right: 10px;
+      font-size: 20px;
+      margin-right: 5px;
       transform: scale(-1, 1);
     }
     
@@ -83,6 +91,7 @@
   
   .header__mail {
     display: block;
+    margin-top: 5px;
     margin-left: -20px;
     font-size: 12px;
     color: #333;

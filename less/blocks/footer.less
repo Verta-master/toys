@@ -1,6 +1,8 @@
 .footer {
   padding-top: 35px;
-  padding-bottom: 40px;
+  padding-bottom: 65px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer__bottom {
@@ -13,7 +15,8 @@
 .footer__block {
   position: relative;
   width: 50%;
-  padding: 25px;
+  padding: 30px;
+  padding-bottom: 20px;
   color: #fff;
   font-size: 12px;
   line-height: 18px;
@@ -25,11 +28,12 @@
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: -25px;
+    bottom: -27px;
     width: 437px;
     height: 230px;
     background-image: url(../img/shadow-left.png);
     background-repeat: no-repeat;
+    opacity: 0.5;
   }
   
   &--left {
@@ -65,8 +69,26 @@
 }
 
 .footer__column {
-  margin-left: 20px;
-  max-width: 185px;
+  margin-left: 25px;
+  line-height: 1.2;
+  
+  &--support {
+    width: 185px;
+  }
+  
+  &--help {
+    width: 105px;
+    margin-left: 50px;
+  }
+  
+  &--consulting {
+    width: 240px;
+    margin-left: 30px;
+  }
+  
+  &--company {
+    width: 135px;
+  }
 }
 
 .footer__title {
@@ -78,6 +100,7 @@
 
 .footer__list {
   a {
+    line-height: 18px;
     text-decoration: underline;
     
     &:hover,
