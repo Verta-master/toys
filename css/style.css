@@ -1270,3 +1270,167 @@ button {
 .social__item:active img {
   opacity: 0.8;
 }
+.tabs__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #e8e8e8;
+}
+.tabs__title .ui-tabs-active {
+  position: relative;
+  color: #12ade3;
+}
+.tabs__title .ui-tabs-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #12ade3;
+}
+.tabs__title .ui-tabs-active::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: -16px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #12ade3;
+}
+.tabs__name {
+  margin-right: 55px;
+  padding: 15px 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 18px;
+  color: #9b9b9b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tabs__field {
+  width: 100%;
+}
+.tabs__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+.tabs__item {
+  position: relative;
+  width: 220px;
+  margin-right: 17px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2;
+}
+.tabs__item:nth-child(5n) {
+  margin-right: 0;
+}
+.tabs__img {
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.tabs__info {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+.tabs__toy {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tabs__price {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.tabs__btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs__sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e63600), color-stop(50%, #e63600), color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom right, #e63600 0%, #e63600 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+.btn {
+  width: 126px;
+  height: 35px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #12ade3;
+  border-bottom: 2px solid #0e93c1;
+  background-image: url(../img/icon-pattern.png);
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+  background-position: left 8px center;
+}
+.btn:hover,
+.btn:active {
+  border: none;
+}
