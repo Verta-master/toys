@@ -6,6 +6,7 @@
   <title>Первый Детский</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -24,9 +25,22 @@
           <span>ваш регион:</span>
           <button class="top-menu__choice">Москва<i class="fas fa-caret-down"></i></button>
           <ul class="top-menu__city">
-            <li><a href="#">Москва</a></li>
-            <li><a href="#">Санкт-Петербург</a></li>
-            <li><a href="#">Екатеринбург</a></li>
+            <li><a href="#">Москва 620</a></li>
+            <li><a href="#">Московская обл. 484</a></li>
+            <li><a href="#">Санкт-Петербург 487</a></li>
+            <li><a href="#">Ленинградская обл. 171</a></li>
+            <li><a href="#">Алтайский край 184</a></li>
+            <li><a href="#">Владимирская обл. 137</a></li>
+            <li><a href="#">Волгоградская обл. 112</a></li>
+            <li><a href="#">Иркутская обл. 132</a></li>
+            <li><a href="#">Калининградская обл. 155</a></li>
+            <li><a href="#">Карелия 284</a></li>
+            <li><a href="#">Краснодарский край 2 641</a></li>
+            <li class="top-menu__blue"><a href="#">Все регионы</a></li>
+            <li class="top-menu__state"><a href="#">бЕЛОРУССИЯ</a></li>
+            <li class="top-menu__state"><a href="#">АРМЕНИЯ</a></li>
+            <li class="top-menu__state"><a href="#">УЗБЕКИСТАН</a></li>
+            <li class="top-menu__state"><a href="#">кЫРГЫЗСТАН</a></li>
           </ul>
         </div>
       </div>
@@ -576,7 +590,7 @@
   </main>
   
   <footer class="wrapper footer">
-    <a href="#" class="feedback">обратная связь</a>
+    <a data-fancybox data-src="#call" href="javascript:;" class="feedback">обратная связь</a>
     <div class="footer__bottom">
       <div class="footer__block footer__block--left">
         <div class="footer__logo">
@@ -635,10 +649,27 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Связь с управляющим</p>
+    <form action="#" class="modal__form">
+      <div class="modal__wrap">
+        <div class="modal__fields">
+          <input type="text" name="name" class="modal__input" placeholder="Ваше имя и фамилия">
+          <input type="tel" name="phone" class="modal__input" placeholder="Ваш телефон">
+          <input type="email" name="email" class="modal__input" placeholder="Email">
+        </div>
+        <textarea name="" class="modal__text" placeholder="Дополнительная информация"></textarea>
+      </div>
+      <button type="submit" class="btn modal__btn">Отправить</button>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
 <!-- Tabs -->
   <script>
