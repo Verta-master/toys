@@ -6,6 +6,7 @@
   <title>Первый Детский</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -108,15 +109,15 @@
       <a href="#" class="breadcrumbs__link">Главная</a>
       <a href="#" class="breadcrumbs__link">Товары для детей</a>
       <a href="#" class="breadcrumbs__link">Автокресла</a>
-      <span class="breadcrumbs__link">Автокресло STM Solar 2 Seatfix (pirate)</span>
+      <span class="breadcrumbs__link breadcrumbs__link--active">Автокресло STM Solar 2 Seatfix (pirate)</span>
     </nav>
     
     <section class="card wrapper">
       <div class="card__product">
         <div class="card__gallery">
-          <figure class="card__img">
+          <a data-fancybox="gallery" href="img/card.jpg" class="card__img">
             <img src="img/card.jpg" alt="Автокресло" width="218" height="288">
-          </figure>
+          </a>
           <div class="swiper-container card__slider">
             <ul class="swiper-wrapper">
               <li class="swiper-slide card__slide">
@@ -132,9 +133,9 @@
                 <img src="img/card.jpg" alt="Автокресло" width="218" height="288">
               </li>
             </ul>
-            <div class="swiper-button-prev card__prev"><i class="fas fa-angle-left"></i></div>
-            <div class="swiper-button-next card__next"><i class="fas fa-angle-right"></i></div>
           </div>
+          <div class="swiper-button-prev card__prev"><i class="fas fa-angle-left"></i></div>
+          <div class="swiper-button-next card__next"><i class="fas fa-angle-right"></i></div>
         </div>
         <div class="card__tabs" id="tabs">
           <ul class="card__tabs-title">
@@ -151,31 +152,31 @@
       </div>
       
       <div class="card__info">
-        <div class="card__brand">
+        <a href="#" class="card__brand">
           <img src="img/brand.jpg" alt="" width="103" height="103">
-        </div>
-        <h1 class="title-card">Автокресло STM Solar2 Seatfix (pirate)</h1>
+        </a>
+        <h1 class="title-card">Автокресло STM Solar<br>2 Seatfix (pirate)</h1>
         <p class="card__subtitle">Из коллекции <a href="#">Seaflex</a></p>
-        <form action="#" class="card__form">
-          <div class="card__price">
-            <p class="card__sale">10%</p>
-            <p class="card__oldprice">21 000 руб.</p>
-            <p class="card__newprice">19 799 руб.</p>
+        <form action="#" class="order">
+          <div class="order__price">
+            <p class="order__sale">10%</p>
+            <p class="order__oldprice">21 000 руб.</p>
+            <p class="order__newprice"><span>19 799</span> руб.</p>
           </div>
-          <div class="card__buy">
-            <input type="text" name="number" class="card__number" value="1">
-            <div class="card__btns">
-              <button type="button" class="card__change">+</button>
-              <button type="button" class="card__change">-</button>
+          <div class="order__buy">
+            <input type="text" name="number" class="order__number" value="1">
+            <div class="order__btns">
+              <button type="button" class="order__change">+</button>
+              <button type="button" class="order__change">-</button>
             </div>
-            <a href="#" class="btn card__btn">в корзину</a>
+            <a href="#" class="btn order__btn">в корзину</a>
           </div>
         </form>
         <p class="card__icon"><i class="fas fa-truck"></i>Доставка завтра</p>
-        <div class="card__delivery-info">
+        <a href="#" class="card__delivery-info">
           <p>Доставка по Москве, МО и Санкт-Петербургу</p>
           <span>Условия доставки</span>
-        </div>
+        </a>
         <table class="card__table">
           <tr>
             <td>Цвет</td>
@@ -240,26 +241,30 @@
         </div>
         <div class="card__address">
           <div class="card__title">Доставка</div>
-          <ul class="card__list">
-            <li>Москва и область</li>
-            <li>Тверь</li>
-            <li>Калуга</li>
-            <li>Обнинск</li>
-            <li>Рязань</li>
-            <li>Тула</li>
-            <li>Владимир
-              <ul class="card__city">
-                <li>доставка 7 дней в неделю, с 9 до 21 часа</li>
-                <li>Подъем покупок в квартиру</li>
-              </ul>
-            </li>
-            <li>Санкт-Петербург
-              <ul class="card__city">
-                <li>доставка по субботам, с 9 до 21 часа</li>
-                <li>Подъем покупок в квартиру</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="card__block">
+            <ul class="card__list">
+              <li>Москва и область</li>
+              <li>Тверь</li>
+              <li>Калуга</li>
+              <li>Обнинск</li>
+              <li>Рязань</li>
+              <li>Тула</li>
+              <li>Владимир
+                <ul class="card__city">
+                  <li>доставка 7 дней в неделю, с 9 до 21 часа</li>
+                  <li>Подъем покупок в квартиру</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="card__list">
+              <li>Санкт-Петербург
+                <ul class="card__city">
+                  <li>доставка по субботам, с 9 до 21 часа</li>
+                  <li>Подъем покупок в квартиру</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -387,6 +392,7 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
 <!-- Tabs -->
   <script>

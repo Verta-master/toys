@@ -1,0 +1,105 @@
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 65px;
+}
+
+.order__price {
+  width: 155px;
+}
+
+.order__sale {
+  position: relative;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 14px;
+  background-color: @red;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @red;
+  }
+}
+
+.order__oldprice {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #7d7d7d;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.order__newprice {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: @green;
+  
+  span {
+    font-size: 30px;
+  }
+}
+
+.order__buy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 260px;
+  border: 2px solid @blue;
+  border-radius: 10px;
+}
+
+.order__btn {
+  width: 210px;
+  height: 54px;
+  font-size: 19px;
+  border-radius: 0 7px 7px 0;
+  background-size: 30px 30px;
+  border-bottom: none;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    background-color: @dark-blue;
+    transition: ease-out 0.3s;
+  }
+}
+
+.order__number {
+  width: 30px;
+  height: 100%;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.order__btns {
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__change {
+  color: #898989;
+  font-size: 18px;
+  
+  &:hover,
+  &:active {
+    color: @blue;
+  }
+}
